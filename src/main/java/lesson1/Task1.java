@@ -14,9 +14,11 @@ public class Task1 {
         task1.makeAndCopy();
     }
 
+    /**
+     * 新建一个daBai，然后往里面写入xiaoBai里面的东东复制到daBai里面
+     */
     @lombok.SneakyThrows
     void makeAndCopy() {
-
         try (FileInputStream in = new FileInputStream(totalDir + "xiaoBai");
              FileOutputStream out = new FileOutputStream(totalDir + "daBai");
         ) {
