@@ -20,7 +20,7 @@ public class Task1 {
     @lombok.SneakyThrows
     void makeAndCopy() {
         try (FileInputStream in = new FileInputStream(totalDir + "xiaoBai");
-             FileOutputStream out = new FileOutputStream(totalDir + "daBai");
+             FileOutputStream out = new FileOutputStream(totalDir + "daBai")
         ) {
             int ch;
             while ((ch = in.read()) != -1) {
